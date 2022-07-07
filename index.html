@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1">
+  <meta property="og:title" content="Dylan Loves You :)">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content=
+  "https://media.discordapp.net/attachments/945924159630872619/979182918347919412/unknown.png">
+  <meta property="og:description" content=
+  "Living Life To The Fullest">
+  <meta property="og:site_name" content="Dylan is King">
+  <meta property="og:url" content="https://dylancole.net">
+  <meta name="theme-color" content="#7007ad">
+  <title>Long Live the King</title>
+  <style>
+  #overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 2;
+  cursor: pointer !important;
+  }
+
+  #text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  }
+
+
+
+  .slidecontainer {
+  width: 100%;
+  }
+
+  .slider {
+  -webkit-appearance: none;
+  background: #ffff;
+  outline: none;
+  width: 200px;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  }
+
+  .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #000;
+  cursor: pointer;
+  }
+
+  .slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+  }
+
+  .row {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  }
+
+
+  .row {
+  display: flex;
+  position: fixed;
+  top: 52%;
+  left: 48%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  }
+
+
+  .column {
+        padding: 10px;
+  }
+
+  .coolimage {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+  }
+  img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  }
+
+  * {
+  box-sizing: border-box;
+  }
+
+  body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+  background-color: #000;
+  color: white;
+  }
+
+  .myVideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  }
+
+  .myVideo::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+
+    /* Whatever IG */
+    background-color: rgba(0,0,0,1);
+  }
+
+  .content {
+  display:inline-block !important; 
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  color: #f1f1f1;
+  padding: 20px;
+  }
+
+  #myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  }
+
+  #myBtn:hover {
+  background: #ddd;
+  color: black;
+  }
+
+  button {
+  background-color: #6a0dad; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  }
+
+  .vl {
+  border-left: 6px solid white;
+  }
+
+  #motto {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  .pfp {
+  border-radius: 50%;
+  }
+
+  #option:hover {
+    cursor: crosshair;
+  }
+
+  .logo {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  color: #fff !important;
+  }
+  </style>
+  <link href=
+  "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet">
+  <link href=
+  "https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.9.0/css/mdb.dark.min.css"
+  rel="stylesheet">
+</head>
+<body>
+  <div id="overlay">
+    <div id="text">
+      <select id="songinit" class="browser-default custom-select"
+      style="width: 250px;">
+        <option value='ExmortisTunes/Who Shot Cupid.mp4'>
+          Who Shot Cupid
+        </option>
+        <option value='ExmortisTunes/Tales Of The Toxic.mp4'>
+          Tales Of The Toxic
+        </option>
+        <option value='ExmortisTunes/la di die.mp4'>
+          La Di Die
+        </option>
+        <option value='ExmortisTunes/SWEAR TO GOD.mp4'>
+          SWEAR TO GOD
+        </option>
+        <option value='ExmortisTunes/PUNK TACTICS.mp4'>
+          PUNK TACTICS
+        </option>
+        <option value='ExmortisTunes/Pray.mp4'>
+          Pray
+        </option>
+        <option value='ExmortisTunes/Needs.mp4'>
+          Needs
+        </option>
+        <option value='ExmortisTunes/Look At Me Now.mp4'>
+          Look At Me Now
+        </option>
+        <option value='ExmortisTunes/Just A Dream.mp4'>
+          Just A Dream
+        </option>
+        <option value='ExmortisTunes/Hard for a Man.mp4'>
+          Hard for a Man
+        </option>
+        <option value='ExmortisTunes/CELESTIAL BODIES.mp4'>
+          CELESTIAL BODIES
+        </option>
+        <option value='ExmortisTunes/Brighter Days.mp4'>
+          Brighter Days
+        </option>
+        <option value='ExmortisTunes/Angels & Demons.mp4'>
+          Angels & Demons
+        </option>
+        <option value='ExmortisTunes/Always On Time.mp4'>
+          Always On Time
+        </option>
+        <option value='ExmortisTunes/Living Life In The Night.mp4'>
+          Living Life In The Night
+        </option>
+        <option value='ExmortisTunes/banana pie.mp4'>
+          banana pie
+        </option>
+        <option value='ExmortisTunes/pain.mp4'>
+          WIll Fill Later
+        </option>
+        <option value='ExmortisTunes/prof.mp4'>
+          WIll Fill Later
+        </option>
+        <option value='ExmortisTunes/she is.mp4'>
+          WIll Fill Later
+        </option>
+        <option value='ExmortisTunes/skrt.mp4'>
+          WIll Fill Later
+        </option>
+        <option value='ExmortisTunes/slingshot.mp4'>
+          WIll Fill Later
+        </option>
+        <option value='ExmortisTunes/talk of the town.mp4'>
+          WIll Fill Later
+        </option>
+        <option value='ExmortisTunes/virus.mp4'>
+          WIll Fill Later
+        </option>
+        <option value='ExmortisTunes/witch.mp4'>
+          WIll Fill Later
+        </option>
+      </select>
+      <hr>
+      <center>
+        <a type="button" onclick=
+        "changeSong(document.getElementById('songinit').value)"
+        class="btn btn-success">Update</a> <a type="button"
+        onclick="closeOverlay()" class="btn btn-danger">Close</a>
+      </center>
+    </div>
+  </div>
+  <div id="captcha">
+    <div class="content">
+      <div class="row">
+        <div class="column">
+          <button onclick="enterSite();">Enter Here :)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mainSite">
+    <video autoplay="" loop="" class="myVideo" id="myVideo"
+    playsinline="">Your browser does not support HTML5
+    video.</video>
+    <div class="content">
+      <div class="row">
+        <div class="column">
+          <img src=
+          "https://media.discordapp.net/attachments/945924159630872619/979182918347919412/unknown.png"
+          class="pfp" width="100" height="100"><span class="logo"
+          id="motto" href="/" style=
+          "padding-left: 25px;">Welcome to the Kingdom</span><br>
+          <br>
+          <span id="motto">Snap: dylancole888</span><br>
+          <br>
+          <a type="button" onclick="on()" class="btn btn-primary">Select Song</a>  <a type="button" href="https://discord.gg/VeTnER5xJS" target="_blank" class="btn btn-primary waves-effect px-3">Discord</a><a type="button" href="https://www.paypal.com/paypalme/jakelenny" target="_blank" class="btn btn-primary waves-effect px-3">Support Me</a> <a type="button" href="https://open.spotify.com/playlist/6FmdfgrTHCkoKlsFvUGLfP?si=a46df9e767e14d60" target="_blank" class="btn btn-primary waves-effect px-3">Best Playlist</a> <a type="button" href="https://www.youtube.com/channel/UCvRf_UCmpqjtBl_NTJgZz9g" target="_blank" class="btn btn-primary waves-effect px-3">Youtube</a> <br>
+          <br>
+          <div class="range">
+            <input type="range" class="form-range" onchange=
+            "updateSlider(this.value)" id="slide" min="0" max="100"
+            step="1" value="10" style="width:100%">
+          </div><!--
+                <hr><center><a href="https://discord.gg/jFgRK9F9aF" target="_blank"><img src="assets/dropcheats.gif"/></a></center>
+                -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="storage/assets/fontawesome.js"></script> 
+  <!-- yo-ho, a pirates life for me. -->
+  <script>
+  var x = document.getElementById("mainSite");
+  var y = document.getElementById("captcha");
+
+  var source = document.createElement('source');
+
+  /*
+  //"follow", "bungo", "lalala", "orb"
+  //["joker", "slingshot", "delirium", "witch", "mistake"]
+  var songs = ["skrt", "gangster", "mistake", "delirium"];
+  const songIndex = Math.floor(Math.random() * songs.length);
+  const song = songs[songIndex];*/
+
+  x.style.display = "none";
+
+  var video = document.getElementById("myVideo");
+  var btn = document.getElementById("myBtn");
+
+  source.setAttribute('src', 'ExmortisTunes/banana pie.mp4');
+  video.appendChild(source);
+
+  video.pause();
+
+  function closeOverlay() {
+  document.getElementById("overlay").style.display = "none";
+  }
+
+  function changeSong(file) {
+  source.setAttribute('src', file);
+  video.appendChild(source);
+  video.load();
+  video.play();
+  }
+
+  function enterSite() {
+  video.volume = 0.10;
+        video.play();
+        x.style.display = "block";
+        y.style.display = "none";
+  }
+
+  function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+  }
+
+  function updateSlider(slideAmount) {
+    var sliderDiv = document.getElementById("sliderAmount");
+    video.volume = (slideAmount / 100);
+    console.log("New volume: " + video.volume);
+  }
+
+  function on() {
+  document.getElementById("overlay").style.display = "block";
+  }
+  </script>
+</body>
+</html>
